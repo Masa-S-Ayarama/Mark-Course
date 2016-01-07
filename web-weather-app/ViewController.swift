@@ -7,12 +7,49 @@
 //
 
 import UIKit
+import MapKit
+
 
 class ViewController: UIViewController {
-
+    
+    var weathers: [Weather]!
+    var locationManager = CLLocationManager()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        parseJSON()
+        
+    }
+    
+    
+    func parseJSON() {
+       
+        let pathFile = NSBundle.mainBundle().pathForResource("weather_14", ofType: "json")!
+        let data = NSData(contentsOfFile: pathFile)!
+        
+        do {
+            let json = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
+            
+            if let dict = json as? Dictionary<String, AnyObject> {
+                if let id = dict["id"] as? Int {
+                    let weather = Weather(countryId: id)
+                }
+            }
+        } catch {
+            print("Could not serialize")
+        }
+    
+    }
+    
+    func locatioAuthStatus() {
+        
+        if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse {
+            
+            locationManager.requestWhenInUseAuthorization()
+        }
     }
 
     override func didReceiveMemoryWarning() {
