@@ -1,0 +1,122 @@
+//
+//  SecondViewController.swift
+//  DevBootCamps
+//
+//  Created by Nas@Mac on 2/1/59.
+//  Copyright © พ.ศ. 2559 Nas@Mac. All rights reserved.
+//
+
+import UIKit
+import MapKit
+
+class LocationVC: UIViewController, UITableViewDelegate, UITableViewDataSource, MKMapViewDelegate  {
+    
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var map: MKMapView!
+    
+    let regionRadius: CLLocationDistance = 1000
+    let locationManager = CLLocationManager() //manage connection & variables from user
+    
+    //Lets pretend we downloaded these from the server
+    let addresses = ["24 Willie Mays Plaza,San Francisco, CA 94107,USA",
+        "888 Howard St,San Francisco, CA 94103,USA",
+        "200 Larkin St,San Francisco, CA 94102,USA"
+    ]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        map.delegate = self
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        for add in addresses {
+            getPlacemarkFromAddress(add)
+        }
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        locatioAuthStatus()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        return UITableViewCell()
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
+    func locatioAuthStatus() {
+        
+        if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse {
+            map.showsUserLocation = true
+        } else {
+            locationManager.requestWhenInUseAuthorization()
+        }
+    }
+    
+    func centerMapOnLocation(location: CLLocation) {
+        
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius * 2, regionRadius * 2)
+        map.setRegion(coordinateRegion, animated: true)
+    }
+    
+    func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
+        
+        if let loc = userLocation.location {
+            centerMapOnLocation(loc)
+        }
+    }
+    
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation.isKindOfClass(BootcampAnnotation) {
+            let annoView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "Default")
+            annoView.pinTintColor = UIColor.cyanColor()
+            annoView.animatesDrop = true
+            return annoView
+            
+        } else if annotation.isKindOfClass(MKUserLocation) {
+            return nil
+        }
+        
+        return nil
+    }
+    
+    func createAnnotationForLocation(location: CLLocation) {
+        let bootcamp = BootcampAnnotation(coordinate: location.coordinate)
+        map.addAnnotation(bootcamp)
+    }
+    
+    func getPlacemarkFromAddress(address: String) {
+        
+        CLGeocoder().geocodeAddressString(address, completionHandler: {
+            (placemarks: [CLPlacemark]?, error: NSError?) -> Void in
+            
+            if let marks = placemarks where marks.count > 0 {
+                if let loc = marks[0].location {
+                    // We have a valid location with coordinates
+                    self.createAnnotationForLocation(loc)
+                }
+            }
+        })
+    }
+    
+    
+    
+    
+}
+
