@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="favourite_place" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PHUKET-1" translatesAutoresizingMaskIntoConstraints="NO" id="wxN-Ay-z3E">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="n0D-Sq-IFL">
+                                <rect key="frame" x="316" y="28" width="264" height="335"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Dz0-Z1-bbv">
+                                        <rect key="frame" x="116" y="0.0" width="148" height="63"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRAVEL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9L-kw-D4k">
+                                                <rect key="frame" x="82" y="0.0" width="66" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIVING-SUNBATH" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbU-sW-7dH">
+                                                <rect key="frame" x="0.0" y="21" width="148" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEA-SAND-SUN" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLQ-eG-Teg">
+                                                <rect key="frame" x="16" y="42" width="132" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fQT-YS-VtX">
+                                        <rect key="frame" x="0.0" y="93" width="264" height="162"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHUKET" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pv6-Eb-dmx">
+                                                <rect key="frame" x="0.0" y="0.0" width="264" height="72"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="60"/>
+                                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEACH" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rz-Gn-zNH">
+                                                <rect key="frame" x="0.0" y="72" width="264" height="90"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="75"/>
+                                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wnh-mK-aKS">
+                                        <rect key="frame" x="62" y="285" width="202" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEA-SAND-SUN" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNR-kT-TS1">
+                                                <rect key="frame" x="0.0" y="0.0" width="132" height="50"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass2" translatesAutoresizingMaskIntoConstraints="NO" id="cBr-Uo-He9">
+                                                <rect key="frame" x="152" y="0.0" width="50" height="50"/>
+                                                <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="06S-6e-61Z"/>
+                                                    <constraint firstAttribute="height" constant="50" id="znL-t8-LAP"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvS-eh-LLe">
+                                <rect key="frame" x="215" y="522" width="171" height="33"/>
+                                <color key="backgroundColor" red="1" green="0.33145293590000002" blue="0.41200149060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="Iqv-qc-Kda"/>
+                                    <constraint firstAttribute="height" constant="33" id="gWz-E4-v9Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="FIND OUT MORE">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <segue destination="icW-X5-HHs" kind="show" id="dkK-tB-hjt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n0D-Sq-IFL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="83I-3E-DXf"/>
+                            <constraint firstItem="n0D-Sq-IFL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Jf8-nC-lax"/>
+                            <constraint firstItem="lvS-eh-LLe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XdC-3p-rDK"/>
+                            <constraint firstItem="wxN-Ay-z3E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YYM-Vq-PDn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lvS-eh-LLe" secondAttribute="bottom" constant="45" id="hwR-Xh-t8o"/>
+                            <constraint firstAttribute="trailing" secondItem="wxN-Ay-z3E" secondAttribute="trailing" id="j8A-Bn-6LH"/>
+                            <constraint firstItem="wxN-Ay-z3E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rIz-7u-FbB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wxN-Ay-z3E" secondAttribute="bottom" id="zLZ-t3-QfT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="moreBtn" destination="wxN-Ay-z3E" id="Pug-jM-DK5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="389"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="a5a-VP-UfI">
+            <objects>
+                <viewController id="icW-X5-HHs" customClass="DetailVC" customModule="favourite_place" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mtu-qa-cjj"/>
+                        <viewControllerLayoutGuide type="bottom" id="LBS-V9-SAS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nys-zS-McW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phuket" translatesAutoresizingMaskIntoConstraints="NO" id="YsA-Qf-5kq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="3OO-vb-mAj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT PHUKET BEACH" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RzX-Gz-E2j">
+                                <rect key="frame" x="200" y="68" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4n6-Kj-aU9"/>
+                                    <constraint firstAttribute="width" constant="200" id="xmd-vI-egn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNM-J8-fA9">
+                                <rect key="frame" x="20" y="20" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Mbc-gV-eYV"/>
+                                    <constraint firstAttribute="width" constant="46" id="yIm-sV-mNw"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="backPressed:" destination="icW-X5-HHs" eventType="touchUpInside" id="ftJ-uV-1Nl"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lrw-cP-ao2">
+                                <rect key="frame" x="20" y="194" width="560" height="386"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="jLn-hA-r1I">
+                                        <rect key="frame" x="0.0" y="0.0" width="121" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POPULATIONS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5Z-eZ-eA7">
+                                                <rect key="frame" x="0.0" y="0.0" width="121" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.72336632010000002" green="0.72336632010000002" blue="0.72336632010000002" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="378,364" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ft3-Pl-h7e">
+                                                <rect key="frame" x="0.0" y="20" width="62" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="62" id="8pR-1G-r64"/>
+                                                    <constraint firstAttribute="height" constant="20" id="KI4-Bj-1qC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.72336632010000002" green="0.72336632010000002" blue="0.72336632010000002" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="4m1-SA-o4y">
+                                        <rect key="frame" x="0.0" y="50" width="560" height="336"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HISTORY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0z-ad-SrN">
+                                                <rect key="frame" x="0.0" y="0.0" width="76" height="12"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.72336632010000002" green="0.72336632010000002" blue="0.72336632010000002" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0Y-Ay-y3d">
+                                                <rect key="frame" x="0.0" y="12" width="560" height="324"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="324" id="7uS-7O-F38"/>
+                                                </constraints>
+                                                <string key="text">เดิมคำว่าภูเก็ตนั้นสะกดว่า ภูเก็จ ซึ่งแปลได้ว่า เมืองแก้ว จึงใช้ตราเป็นรูปภูเขา (ภู) มีประกายแก้ว (เก็จ) เปล่งออกเป็นรัศมี (ดูตราที่ผ้าผูกคอลูกเสือ) ตรงกับความหมายเดิมซึ่งชาวทมิฬเรียก มณิครัม ตามหลักฐาน พ.ศ. 1568 ภูเก็ตเป็นที่รู้จักของนักเดินเรือที่ใช้เส้นทางระหว่างจีนกับอินเดีย โดยผ่านแหลมมลายู หลักฐานที่เก่าแก่ที่สุดก็คือ หนังสือภูมิศาสตร์และแผนที่เดินเรือของคลอดิอุส ปโตเลมี เมื่อประมาณ พ.ศ. 700 กล่าวถึงการเดินทางจากแหลมสุวรรณภูมิลงมาจนถึงแหลมมลายู ซึ่งต้องผ่านแหลม จังซีลอน หรือเกาะภูเก็ต (เกาะถลาง) นั่นเอง[ต้องการอ้างอิง]
+
+จากประวัติศาสตร์ไทย ภูเก็ตเป็นส่วนหนึ่งของอาณาจักรตามพรลิงก์ อาณาจักรศรีวิชัย สืบต่อมาจนถึงสมัยอาณาจักรนครศรีธรรมราชเรียกเกาะภูเก็ตว่า เมืองตะกั่วถลาง เป็นเมืองที่ 11 ใน 12 เมืองนักษัตร โดยใช้ตราเป็นรูปสุนัข จนถึงสมัยสุโขทัย เมืองถลางไปขึ้นกับเมืองตะกั่วป่า ในสมัยอยุธยา ชาวฮอลันดา ชาวโปรตุเกส และชาวฝรั่งเศส ได้สร้างสถานที่เก็บสินค้าเพื่อรับซื้อแร่ดีบุกจากเมืองภูเก็ต (ถลาง)
+
+ในรัชสมัยของพระบาทสมเด็จพระพุทธยอดฟ้าจุฬาโลก ได้เกิดสงครามเก้าทัพขึ้น พระเจ้าปดุง กษัตริย์ของประเทศพม่าในสมัยนั้น ได้ให้แม่ทัพยกทัพมาตีหัวเมืองปักษ์ใต้ เช่น ไชยา นครศรีธรรมราช และให้ยี่หวุ่นนำกำลังทัพเรือพล 3,000 คนเข้าตีเมืองตะกั่วป่า เมืองตะกั่วทุ่ง และเมืองถลาง ซึ่งขณะนั้นเจ้าเมืองถลาง (พญาพิมลอัยาขัน) เพิ่งถึงแก่อนิจกรรม ท่านผู้หญิงจัน ภรรยา และคุณมุก น้องสาว จึงรวบรวมกำลังต่อสู้กับพม่าจนชนะเมื่อวันที่ 13 มีนาคม พ.ศ. 2328 พระบาทสมเด็จพระพุทธยอดฟ้าจุฬาโลกมหาราชจึงทรงพระกรุณาโปรดเกล้าฯ ให้ท่านผู้หญิงจันเป็น ท้าวเทพกระษัตรี และคุณมุกเป็นท้าวศรีสุนทร
+
+ในรัชสมัยพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว ได้รวบรวมหัวเมืองชายทะเลตะวันตกตั้งเป็น มณฑลภูเก็ต และเมื่อปี พ.ศ. 2476 ได้ยกเลิกระบบมณฑลเทศาภิบาล เปลี่ยนมาเป็นจังหวัดภูเก็ต</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.72336632010000002" green="0.72336632010000002" blue="0.72336632010000002" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RzX-Gz-E2j" firstAttribute="top" secondItem="Mtu-qa-cjj" secondAttribute="bottom" constant="48" id="TJT-zF-y0l"/>
+                            <constraint firstItem="jNM-J8-fA9" firstAttribute="top" secondItem="Mtu-qa-cjj" secondAttribute="bottom" id="Tdg-6W-9yG"/>
+                            <constraint firstItem="YsA-Qf-5kq" firstAttribute="top" secondItem="Nys-zS-McW" secondAttribute="top" id="UhE-sC-0Qb"/>
+                            <constraint firstItem="YsA-Qf-5kq" firstAttribute="leading" secondItem="Nys-zS-McW" secondAttribute="leading" id="ZU5-7x-yeL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lrw-cP-ao2" secondAttribute="trailing" id="Zxb-FX-0dH"/>
+                            <constraint firstAttribute="trailing" secondItem="YsA-Qf-5kq" secondAttribute="trailing" id="cbR-Df-j8K"/>
+                            <constraint firstItem="RzX-Gz-E2j" firstAttribute="centerX" secondItem="Nys-zS-McW" secondAttribute="centerX" id="kKl-4D-UvD"/>
+                            <constraint firstItem="jNM-J8-fA9" firstAttribute="leading" secondItem="Nys-zS-McW" secondAttribute="leadingMargin" id="r0S-ag-u84"/>
+                            <constraint firstItem="LBS-V9-SAS" firstAttribute="top" secondItem="lrw-cP-ao2" secondAttribute="bottom" constant="20" id="sf7-hd-Oba"/>
+                            <constraint firstItem="lrw-cP-ao2" firstAttribute="top" secondItem="YsA-Qf-5kq" secondAttribute="bottom" constant="37" id="t1g-di-d6A"/>
+                            <constraint firstItem="lrw-cP-ao2" firstAttribute="leading" secondItem="Nys-zS-McW" secondAttribute="leadingMargin" id="utn-QI-jOz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xnb-Dw-Lra" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="389"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fca-pw-dHT">
+            <objects>
+                <viewController id="gRI-gT-Na5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bfg-1O-Hjd"/>
+                        <viewControllerLayoutGuide type="bottom" id="88m-YR-8e4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t9z-8u-fft">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3QJ-pc-bMn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PHUKET-1" width="1000" height="667"/>
+        <image name="compass2" width="700" height="700"/>
+        <image name="phuket" width="1280" height="800"/>
+    </resources>
+</document>
