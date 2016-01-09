@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47EC90F71C369084003B3FBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EC90F61C369084003B3FBE /* AppDelegate.swift */; };
+		47EC90F91C369084003B3FBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EC90F81C369084003B3FBE /* ViewController.swift */; };
+		47EC90FE1C369084003B3FBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47EC90FC1C369084003B3FBE /* Main.storyboard */; };
+		47EC91001C369084003B3FBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47EC90FF1C369084003B3FBE /* Assets.xcassets */; };
+		47EC91031C369084003B3FBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47EC91011C369084003B3FBE /* LaunchScreen.storyboard */; };
+		47EC910C1C3690F2003B3FBE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EC910B1C3690F2003B3FBE /* Post.swift */; };
+		47EC910E1C369916003B3FBE /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EC910D1C369916003B3FBE /* PostCell.swift */; };
+		47EC91121C369F3B003B3FBE /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EC91111C369F3B003B3FBE /* AddPostVC.swift */; };
+		47EC91151C36A98F003B3FBE /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EC91141C36A98F003B3FBE /* DataServices.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		47EC90F31C369084003B3FBE /* my-hood-devslopes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-hood-devslopes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47EC90F61C369084003B3FBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		47EC90F81C369084003B3FBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47EC90FD1C369084003B3FBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		47EC90FF1C369084003B3FBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47EC91021C369084003B3FBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		47EC91041C369084003B3FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47EC910B1C3690F2003B3FBE /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		47EC910D1C369916003B3FBE /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		47EC91111C369F3B003B3FBE /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		47EC91141C36A98F003B3FBE /* DataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47EC90F01C369084003B3FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47EC90EA1C369084003B3FBE = {
+			isa = PBXGroup;
+			children = (
+				47EC90F51C369084003B3FBE /* my-hood-devslopes */,
+				47EC90F41C369084003B3FBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47EC90F41C369084003B3FBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47EC90F31C369084003B3FBE /* my-hood-devslopes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47EC90F51C369084003B3FBE /* my-hood-devslopes */ = {
+			isa = PBXGroup;
+			children = (
+				47EC91131C36A97B003B3FBE /* Services */,
+				47EC91101C369EDE003B3FBE /* Controller */,
+				47EC910F1C36991E003B3FBE /* View */,
+				47EC910A1C3690D7003B3FBE /* Model */,
+				47EC90F61C369084003B3FBE /* AppDelegate.swift */,
+				47EC90FF1C369084003B3FBE /* Assets.xcassets */,
+				47EC91041C369084003B3FBE /* Info.plist */,
+			);
+			path = "my-hood-devslopes";
+			sourceTree = "<group>";
+		};
+		47EC910A1C3690D7003B3FBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47EC910B1C3690F2003B3FBE /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		47EC910F1C36991E003B3FBE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47EC90FC1C369084003B3FBE /* Main.storyboard */,
+				47EC91011C369084003B3FBE /* LaunchScreen.storyboard */,
+				47EC910D1C369916003B3FBE /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		47EC91101C369EDE003B3FBE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				47EC90F81C369084003B3FBE /* ViewController.swift */,
+				47EC91111C369F3B003B3FBE /* AddPostVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		47EC91131C36A97B003B3FBE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				47EC91141C36A98F003B3FBE /* DataServices.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47EC90F21C369084003B3FBE /* my-hood-devslopes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47EC91071C369084003B3FBE /* Build configuration list for PBXNativeTarget "my-hood-devslopes" */;
+			buildPhases = (
+				47EC90EF1C369084003B3FBE /* Sources */,
+				47EC90F01C369084003B3FBE /* Frameworks */,
+				47EC90F11C369084003B3FBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "my-hood-devslopes";
+			productName = "my-hood-devslopes";
+			productReference = 47EC90F31C369084003B3FBE /* my-hood-devslopes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47EC90EB1C369084003B3FBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Nas@Mac";
+				TargetAttributes = {
+					47EC90F21C369084003B3FBE = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 5HLPBPBG6U;
+					};
+				};
+			};
+			buildConfigurationList = 47EC90EE1C369084003B3FBE /* Build configuration list for PBXProject "my-hood-devslopes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47EC90EA1C369084003B3FBE;
+			productRefGroup = 47EC90F41C369084003B3FBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47EC90F21C369084003B3FBE /* my-hood-devslopes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47EC90F11C369084003B3FBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47EC91031C369084003B3FBE /* LaunchScreen.storyboard in Resources */,
+				47EC91001C369084003B3FBE /* Assets.xcassets in Resources */,
+				47EC90FE1C369084003B3FBE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47EC90EF1C369084003B3FBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47EC90F71C369084003B3FBE /* AppDelegate.swift in Sources */,
+				47EC90F91C369084003B3FBE /* ViewController.swift in Sources */,
+				47EC910C1C3690F2003B3FBE /* Post.swift in Sources */,
+				47EC91151C36A98F003B3FBE /* DataServices.swift in Sources */,
+				47EC910E1C369916003B3FBE /* PostCell.swift in Sources */,
+				47EC91121C369F3B003B3FBE /* AddPostVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		47EC90FC1C369084003B3FBE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47EC90FD1C369084003B3FBE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		47EC91011C369084003B3FBE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47EC91021C369084003B3FBE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47EC91051C369084003B3FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47EC91061C369084003B3FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47EC91081C369084003B3FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "my-hood-devslopes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Nas-Mac.my-hood-devslopes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		47EC91091C369084003B3FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "my-hood-devslopes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Nas-Mac.my-hood-devslopes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47EC90EE1C369084003B3FBE /* Build configuration list for PBXProject "my-hood-devslopes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47EC91051C369084003B3FBE /* Debug */,
+				47EC91061C369084003B3FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47EC91071C369084003B3FBE /* Build configuration list for PBXNativeTarget "my-hood-devslopes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47EC91081C369084003B3FBE /* Debug */,
+				47EC91091C369084003B3FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47EC90EB1C369084003B3FBE /* Project object */;
+}

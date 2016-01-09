@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RedVC" customModule="no_storyboard_app" customModuleProvider="target">
+            <connections>
+                <outlet property="printLbl" destination="ZgG-Qj-lbA" id="Q5p-y9-GcF"/>
+                <outlet property="view" destination="qBr-gB-Gxq" id="LOZ-ir-dlL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qBr-gB-Gxq">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wz-bd-6rb">
+                    <rect key="frame" x="248" y="283" width="104" height="35"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.2408293957" green="0.56212311370000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="4AW-SH-zNs"/>
+                        <constraint firstAttribute="width" constant="104" id="7mX-LT-FBG"/>
+                    </constraints>
+                    <state key="normal" title="Back to Main">
+                        <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </state>
+                    <connections>
+                        <action selector="loadBlueView:" destination="-1" eventType="touchUpInside" id="ibk-9Z-dfR"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZgG-Qj-lbA">
+                    <rect key="frame" x="8" y="97" width="584" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="584" id="LcJ-US-JUH"/>
+                        <constraint firstAttribute="height" constant="21" id="NFf-WK-Sqw"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="584" id="TF9-yQ-F3M"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="rDb-c0-KQf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="1Wz-bd-6rb" firstAttribute="centerY" secondItem="qBr-gB-Gxq" secondAttribute="centerY" id="2y0-Yk-TTU"/>
+                <constraint firstItem="ZgG-Qj-lbA" firstAttribute="centerX" secondItem="qBr-gB-Gxq" secondAttribute="centerX" id="8AZ-Mf-7ad"/>
+                <constraint firstItem="ZgG-Qj-lbA" firstAttribute="top" secondItem="qBr-gB-Gxq" secondAttribute="top" constant="97" id="Qcw-3W-zyG"/>
+                <constraint firstItem="1Wz-bd-6rb" firstAttribute="centerX" secondItem="qBr-gB-Gxq" secondAttribute="centerX" id="qx8-1X-ffE"/>
+            </constraints>
+            <point key="canvasLocation" x="82" y="337"/>
+        </view>
+    </objects>
+</document>

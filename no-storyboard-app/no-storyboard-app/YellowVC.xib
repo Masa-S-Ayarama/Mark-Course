@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YellowVC" customModule="no_storyboard_app" customModuleProvider="target">
+            <connections>
+                <outlet property="printLbl" destination="9Nh-EO-uso" id="Jol-5G-kbz"/>
+                <outlet property="view" destination="USA-mV-uSX" id="bDN-rF-bO6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="fwt-JO-ev8">
+            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <animations/>
+        </activityIndicatorView>
+        <view contentMode="scaleToFill" id="USA-mV-uSX">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKP-iC-3zU">
+                    <rect key="frame" x="254" y="300" width="93" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="5nw-Tt-ZOn"/>
+                        <constraint firstAttribute="width" constant="93" id="HOw-2g-7Di"/>
+                    </constraints>
+                    <state key="normal" title="Go To Red">
+                        <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </state>
+                    <connections>
+                        <action selector="loadRedView:" destination="-1" eventType="touchUpInside" id="vcL-Ov-I4g"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ps-hC-Pw9">
+                    <rect key="frame" x="250" y="183" width="100" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.2408293957" green="0.56212311370000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="51a-D3-Box"/>
+                        <constraint firstAttribute="width" constant="100" id="8m5-J9-FAf"/>
+                        <constraint firstAttribute="height" constant="30" id="dNB-wz-Cz4"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="hIG-TI-7Oi"/>
+                    </constraints>
+                    <state key="normal" title="Go To Main">
+                        <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="51a-D3-Box"/>
+                            <exclude reference="hIG-TI-7Oi"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="loadBlueView:" destination="-1" eventType="touchUpInside" id="yCE-fh-p4g"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Nh-EO-uso">
+                    <rect key="frame" x="8" y="77" width="584" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="AnX-vb-g3z"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="584" id="MsO-kQ-GDU"/>
+                        <constraint firstAttribute="width" constant="584" id="Uje-OG-1rc"/>
+                        <constraint firstAttribute="height" constant="21" id="Vc0-Dd-LtR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="hKP-iC-3zU" firstAttribute="centerX" secondItem="USA-mV-uSX" secondAttribute="centerX" id="2uH-yj-18y"/>
+                <constraint firstItem="9Nh-EO-uso" firstAttribute="top" secondItem="USA-mV-uSX" secondAttribute="top" constant="77" id="8fh-QW-Jrp"/>
+                <constraint firstItem="hKP-iC-3zU" firstAttribute="top" secondItem="6Ps-hC-Pw9" secondAttribute="bottom" constant="87" id="A7H-fE-zHR"/>
+                <constraint firstItem="hKP-iC-3zU" firstAttribute="centerY" secondItem="USA-mV-uSX" secondAttribute="centerY" id="Do3-FL-cpR"/>
+                <constraint firstItem="6Ps-hC-Pw9" firstAttribute="top" secondItem="USA-mV-uSX" secondAttribute="top" constant="183" id="Sl4-5P-GQP"/>
+                <constraint firstItem="6Ps-hC-Pw9" firstAttribute="centerX" secondItem="USA-mV-uSX" secondAttribute="centerX" id="awR-zY-tXk"/>
+                <constraint firstItem="9Nh-EO-uso" firstAttribute="centerX" secondItem="USA-mV-uSX" secondAttribute="centerX" id="i6l-Cv-s6C"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Do3-FL-cpR"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="179" y="423"/>
+        </view>
+    </objects>
+</document>
