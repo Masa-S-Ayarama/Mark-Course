@@ -1,1 +1,9 @@
 ApiKeys.plist
+
+# MAC_OS Junk Files
+.DS_Store
+.metadata
+
+#Windows_OS Junk Files
+.com
+.exe
